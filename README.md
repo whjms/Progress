@@ -1,4 +1,4 @@
 Progress
 ========
 
-A QT-based copy of [Progress Quest](progressquest.com).
+A QT-based copy of [Progress Quest](http://progressquest.com).
