@@ -22,7 +22,7 @@ MainWindow::MainWindow(QWidget *parent) :
     questLength = INITIAL_QUEST_TIME;
     questTime = 0;
     questCount = 0;
-    questGenerator = new Quests();
+    questGenerator = new ItemGenerator();
 
     ui->progressBar->setFormat("%v/%m XP");
     ui->progressBar->setMaximum(currentMaxXp);
@@ -81,6 +81,6 @@ void MainWindow::nextQuest() {
     questTime = 0;
     questLength = ceil(questLength * QUEST_LEVEL_UP_FACTOR);
 
-    ui->questList->insertItem(0, QString::fromStdString(questGenerator->getQuest()));
+    ui->questList->insertItem(0, QString::fromStdString(questGenerator->getItem()));
     ui->questProgress->setMaximum(questLength);
 }

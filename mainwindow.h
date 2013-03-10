@@ -31,7 +31,7 @@ private:
     const double QUEST_LEVEL_UP_FACTOR = 1.1;
     void levelUp();
     void nextQuest();
-    Quests* questGenerator;
+    ItemGenerator* questGenerator;
 
 private slots:
     void timerTick();
