@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include <string>
-#include "quests.h"
+#include "itemgenerator.h"
 namespace Ui {
 class MainWindow;
 }

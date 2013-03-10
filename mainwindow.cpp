@@ -3,7 +3,7 @@
 #include <QTimer>
 #include <math.h>
 #include <iostream>
-#include "quests.h"
+#include "itemgenerator.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),

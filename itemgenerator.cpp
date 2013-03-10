@@ -1,7 +1,7 @@
 /* A class that is meant to contain lists of item materials, qualities,
  * origins, and types.
  */
-#include "quests.h"
+#include "itemgenerator.h"
 #include <stdlib.h>
 #include <iostream>
 
