@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include <string>
-
+#include "quests.h"
 namespace Ui {
 class MainWindow;
 }
@@ -22,14 +22,16 @@ private:
     int xp;
     int questTime;
     int level;
+    int questCount;
     int currentMaxXp;
     int questLength;
     const int INITIAL_MAX_XP = 10;
-    const int INITIAL_QUEST_TIME = 5;
+    const int INITIAL_QUEST_TIME = 2;
     const double XP_LEVEL_UP_FACTOR = 1.25;
-    const double QUEST_LEVEL_UP_FACTOR = 1.15;
+    const double QUEST_LEVEL_UP_FACTOR = 1.1;
     void levelUp();
     void nextQuest();
+    Quests* questGenerator;
 
 private slots:
     void timerTick();

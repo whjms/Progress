@@ -14,9 +14,9 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    items.cpp
+    quests.cpp
 
 HEADERS  += mainwindow.h \
-    items.h
+    quests.h
 
 FORMS    += mainwindow.ui
