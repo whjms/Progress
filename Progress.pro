@@ -15,10 +15,14 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     itemgenerator.cpp \
-    item.cpp
+    item.cpp \
+    questgenerator.cpp \
+    quest.cpp
 
 HEADERS  += mainwindow.h \
     itemgenerator.h \
-    item.h
+    item.h \
+    questgenerator.h \
+    quest.h
 
 FORMS    += mainwindow.ui

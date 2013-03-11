@@ -5,6 +5,7 @@
 #include <iostream>
 #include "itemgenerator.h"
 #include "item.h"
+#include "quest.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -14,7 +15,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // Create timer to add 1 XP every second
     timer = new QTimer(this);
-    timer->setInterval(100);
+    timer->setInterval(1000);
     timer->start();
 
     xp = 0;
@@ -76,14 +77,12 @@ void MainWindow::levelUp() {
  * completing quests, based on how many quests have been completed.
  */
 void MainWindow::nextQuest() {
-    ui->questList->item(0)->setText(ui->questList->item(0)->text() + "completed");
     questCount++;
     xp += ceil(sqrt(questCount));
     questTime = 0;
     questLength = ceil(questLength * QUEST_LEVEL_UP_FACTOR);
 
     Item item = questGenerator->getItem();
-
     ui->questList->insertItem(0, QString::fromStdString(item.toString()));
     ui->questProgress->setMaximum(questLength);
 }

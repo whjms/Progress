@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <string>
 #include "itemgenerator.h"
+#include "quest.h"
+
 namespace Ui {
 class MainWindow;
 }
@@ -19,6 +21,7 @@ public:
 private:
     Ui::MainWindow *ui;
     QTimer* timer;
+    Quest* currentQuest;
     int xp;
     int questTime;
     int level;
