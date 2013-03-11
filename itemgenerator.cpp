@@ -1,3 +1,15 @@
+/*****************************************************************************
+ * itemgenerator.cpp                                                         *
+ * Author: Qasim Ali                                                         *
+ * Created: March 10, 2013                                                   *
+ *---------------------------------------------------------------------------*
+ * A class that contains lists of item materials, qualities, effects, and    *
+ * types.                                                                    *
+ * --------------------------------------------------------------------------*
+ * Copyright 2013 Qasim Ali. Distributed under GNU GPL v3. For more          *
+ * information, consult the LICENSE file located in this program's root      *
+ * directory.                                                                *
+ ****************************************************************************/
 #include "itemgenerator.h"
 #include "item.h"
 #include <stdlib.h>

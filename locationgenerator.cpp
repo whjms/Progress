@@ -1,3 +1,15 @@
+/*****************************************************************************
+ * locationgenerator.cpp                                                     *
+ * Author: Qasim Ali                                                         *
+ * Created: March 11, 2013                                                   *
+ *---------------------------------------------------------------------------*
+ * Generates a Location with randomly selected type and region. Possible     *
+ * values for each field are generated within the 'init' functions.          *
+ * --------------------------------------------------------------------------*
+ * Copyright 2013 Qasim Ali. Distributed under GNU GPL v3. For more          *
+ * information, consult the LICENSE file located in this program's root      *
+ * directory.                                                                *
+ ****************************************************************************/
 #include "locationgenerator.h"
 
 LocationGenerator::LocationGenerator()

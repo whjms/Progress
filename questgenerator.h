@@ -1,6 +1,14 @@
-/* A class that generates a Quest with a randomly generated action and item.
- * XP rewards are to be provided by MainWindow.
- */
+/*****************************************************************************
+ * questgenerator.h                                                          *
+ * Author: Qasim Ali                                                         *
+ * Created: March 10, 2013                                                   *
+ *---------------------------------------------------------------------------*
+ * Generates a random Quest with a random Item and a random Location.        *
+ * --------------------------------------------------------------------------*
+ * Copyright 2013 Qasim Ali. Distributed under GNU GPL v3. For more          *
+ * information, consult the LICENSE file located in this program's root      *
+ * directory.                                                                *
+ ****************************************************************************/
 #ifndef QUESTGENERATOR_H
 #define QUESTGENERATOR_H
 #include "itemgenerator.h"

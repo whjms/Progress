@@ -1,3 +1,16 @@
+/*****************************************************************************
+ * mainwindow.h                                                              *
+ * Author: Qasim Ali                                                         *
+ * Created: March 10, 2013                                                   *
+ *---------------------------------------------------------------------------*
+ * Class that creates the window and contains all widgets. Also handles the  *
+ * creation and completion of quests, the addition of items, and leveling up *
+ * the player.                                                               *
+ * --------------------------------------------------------------------------*
+ * Copyright 2013 Qasim Ali. Distributed under GNU GPL v3. For more          *
+ * information, consult the LICENSE file located in this program's root      *
+ * directory.                                                                *
+ ****************************************************************************/
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
