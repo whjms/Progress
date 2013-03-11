@@ -44,9 +44,6 @@ MainWindow::~MainWindow()
     delete questGenerator;
 }
 
-/* Adds one XP to character and quest XP every tick. Checks if character is
- * due for a level up or a new quest. Updates progress bars.
- */
 void MainWindow::timerTick() {
     xp++;
     questTime++;
@@ -60,9 +57,6 @@ void MainWindow::timerTick() {
     ui->questProgress->setValue(questTime);
 }
 
-/* Adds 1 to level and resets XP. Updates labels as well.
- *
- */
 void MainWindow::levelUp() {
     level++;
     xp = 0;
@@ -72,10 +66,6 @@ void MainWindow::levelUp() {
     ui->lbl_level->setText((new QString("Level %1"))->arg(QString::number(level)));
 }
 
-/* Changes the current quest's title to 'completed' and adds a random quest.
- * Resets quest xp and increases quest length. Rewards player with XP for
- * completing quests, based on how many quests have been completed.
- */
 void MainWindow::nextQuest() {
     questCount++;
     xp += ceil(sqrt(questCount));

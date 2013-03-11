@@ -1,3 +1,6 @@
+/* A class that is meant to contain lists of item materials, qualities,
+ * effects, and types.
+ */
 #ifndef ITEMS_H
 #define ITEMS_H
 #include <string>
@@ -8,8 +11,9 @@ class ItemGenerator
 {
 public:
     ItemGenerator();
+
+    /* Returns a randomly generated Item */
     Item getItem();
-    void test();
 
 private:
     std::vector<std::string> itemTypes;

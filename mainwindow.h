@@ -22,6 +22,8 @@ private:
     Ui::MainWindow *ui;
     QTimer* timer;
     Quest* currentQuest;
+    ItemGenerator* questGenerator;
+
     int xp;
     int questTime;
     int level;
@@ -32,11 +34,19 @@ private:
     const int INITIAL_QUEST_TIME = 2;
     const double XP_LEVEL_UP_FACTOR = 1.25;
     const double QUEST_LEVEL_UP_FACTOR = 1.1;
+
+    /* Adds 1 to level and resets XP and updates labels to match */
     void levelUp();
+
+    /* Changes currentQuest to a new randomly generated one. Adds XP and Item
+     * rewards to the player's current XP and inventory list.
+     */
     void nextQuest();
-    ItemGenerator* questGenerator;
 
 private slots:
+    /* Adds one XP to character and quest XP every tick. Checks if character is
+     * due for a level up or a new quest. Updates progress bars.
+     */
     void timerTick();
 };
 

@@ -1,11 +1,9 @@
-/* A class that is meant to contain lists of item materials, qualities,
- * origins, and types.
- */
 #include "itemgenerator.h"
 #include "item.h"
 #include <stdlib.h>
 #include <iostream>
 
+/* Populates all item property vectors */
 ItemGenerator::ItemGenerator() {
     this->initItemTypeVector();
     this->initMaterialVector();
