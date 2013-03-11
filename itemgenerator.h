@@ -14,10 +14,10 @@ private:
     std::vector<std::string> itemTypes;
     std::vector<std::string> materials;
     std::vector<std::string> qualities;
-    std::vector<std::string> origins;
+    std::vector<std::string> effects;
     void initMaterialVector();
     void initQualityVector();
-    void initOriginVector();
+    void initEffectVector();
     void initItemTypeVector();
 };
 
