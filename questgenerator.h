@@ -19,6 +19,8 @@ public:
 
 private:
     ItemGenerator itemGen;
+    LocationGenerator locationGen;
+
     std::vector<std::string> actions;
 
     void initActionVector();

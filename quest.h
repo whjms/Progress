@@ -18,6 +18,7 @@ private:
     int reward;
     int length;
     std::string action;
+    std::string location;
 };
 
 #endif // QUEST_H

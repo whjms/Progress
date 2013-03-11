@@ -1,6 +1,7 @@
 #include "questgenerator.h"
 #include <iostream>
 #include <math.h>
+#include <cstdlib>
 
 QuestGenerator::QuestGenerator()
 {

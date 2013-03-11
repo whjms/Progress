@@ -17,12 +17,16 @@ SOURCES += main.cpp\
     itemgenerator.cpp \
     item.cpp \
     questgenerator.cpp \
-    quest.cpp
+    quest.cpp \
+    location.cpp \
+    locationgenerator.cpp
 
 HEADERS  += mainwindow.h \
     itemgenerator.h \
     item.h \
     questgenerator.h \
-    quest.h
+    quest.h \
+    location.h \
+    locationgenerator.h
 
 FORMS    += mainwindow.ui
