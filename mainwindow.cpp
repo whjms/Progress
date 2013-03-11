@@ -84,6 +84,8 @@ void MainWindow::nextQuest() {
     ui->questList->insertItem(0, QString::fromStdString(
                                   currentQuest->toString()));
 
+    ui->locationLabel->setText(QString::fromStdString("Location: " + currentQuest->getLocation()->toString()));
+
 }
 
 int MainWindow::getQuestLength(int length) {

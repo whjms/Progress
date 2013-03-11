@@ -4,21 +4,23 @@
 #ifndef QUEST_H
 #define QUEST_H
 #include "item.h"
+#include "location.h"
 
 class Quest
 {
 public:
-    Quest(Item item, int xpReward, int length, std::string action);
+    Quest(Item item, int xpReward, int length, std::string action, Location* loc);
     std::string toString();
     int getReward();
     int getLength();
     Item getItem();
+    Location *getLocation();
 private:
     Item questItem;
     int reward;
     int length;
     std::string action;
-    std::string location;
+    Location* location;
 };
 
 #endif // QUEST_H

@@ -1,11 +1,12 @@
 #include "quest.h"
 
-Quest::Quest(Item item, int xpReward, int length, std::string action)
+Quest::Quest(Item item, int xpReward, int length, std::string action, Location *loc)
     :
       questItem(item),
       reward(xpReward),
       length(length),
-      action(action)
+      action(action),
+      location(loc)
 {
 }
 
@@ -23,4 +24,8 @@ int Quest::getLength() {
 
 Item Quest::getItem() {
     return this->questItem;
+}
+
+Location* Quest::getLocation() {
+    return this->location;
 }

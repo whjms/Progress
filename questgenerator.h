@@ -3,8 +3,8 @@
  */
 #ifndef QUESTGENERATOR_H
 #define QUESTGENERATOR_H
-#include "item.h"
 #include "itemgenerator.h"
+#include "locationgenerator.h"
 #include "quest.h"
 #include <vector>
 #include <string>

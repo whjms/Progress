@@ -17,6 +17,8 @@ void QuestGenerator::initActionVector() {
 }
 
 Quest* QuestGenerator::getQuest(int reward, int length) {
-    return new Quest(itemGen.getItem(), reward, length, actions[rand() % actions.size()]);
+    return new Quest(itemGen.getItem(), reward, length,
+                     actions[rand() % actions.size()],
+                     locationGen.getLocation());
 }
 
