@@ -8,9 +8,16 @@
 class Quest
 {
 public:
-    Quest(Item item);
+    Quest(Item item, int xpReward, int length, std::string action);
+    std::string toString();
+    int getReward();
+    int getLength();
+    Item getItem();
 private:
     Item questItem;
+    int reward;
+    int length;
+    std::string action;
 };
 
 #endif // QUEST_H

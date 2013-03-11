@@ -3,8 +3,8 @@
 
 #include <QMainWindow>
 #include <string>
-#include "itemgenerator.h"
 #include "quest.h"
+#include "questgenerator.h"
 
 namespace Ui {
 class MainWindow;
@@ -22,7 +22,8 @@ private:
     Ui::MainWindow *ui;
     QTimer* timer;
     Quest* currentQuest;
-    ItemGenerator* questGenerator;
+    QuestGenerator* questGenerator;
+    ItemGenerator* itemGenerator;
 
     int xp;
     int questTime;
@@ -31,7 +32,7 @@ private:
     int currentMaxXp;
     int questLength;
     const int INITIAL_MAX_XP = 10;
-    const int INITIAL_QUEST_TIME = 2;
+    const int INITIAL_QUEST_TIME = 5;
     const double XP_LEVEL_UP_FACTOR = 1.25;
     const double QUEST_LEVEL_UP_FACTOR = 1.1;
 
@@ -42,6 +43,12 @@ private:
      * rewards to the player's current XP and inventory list.
      */
     void nextQuest();
+
+    /* Returns the XP based on the algorithm (square root) of the quest count
+     */
+    int getQuestXP(int count);
+
+    int getQuestLength(int length);
 
 private slots:
     /* Adds one XP to character and quest XP every tick. Checks if character is
