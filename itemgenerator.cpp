@@ -45,6 +45,10 @@ void ItemGenerator::initItemTypeVector() {
     itemTypes.push_back("gauntlets");
     itemTypes.push_back("leggings");
     itemTypes.push_back("shoulder pads");
+    itemTypes.push_back("gloves");
+    itemTypes.push_back("boots");
+    itemTypes.push_back("shield");
+    itemTypes.push_back("hood");
 }
 
 void ItemGenerator::initMaterialVector() {
@@ -58,6 +62,7 @@ void ItemGenerator::initMaterialVector() {
 }
 
 void ItemGenerator::initQualityVector() {
+    qualities.push_back("Bad");
     qualities.push_back("Poor");
     qualities.push_back("Inferior");
     qualities.push_back("Mediocre");

@@ -14,9 +14,11 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    itemgenerator.cpp
+    itemgenerator.cpp \
+    item.cpp
 
 HEADERS  += mainwindow.h \
-    itemgenerator.h
+    itemgenerator.h \
+    item.h
 
 FORMS    += mainwindow.ui
