@@ -2,12 +2,13 @@
 #define ITEMS_H
 #include <string>
 #include <vector>
+#include "item.h"
 
 class ItemGenerator
 {
 public:
     ItemGenerator();
-    std::string getItem();
+    Item getItem();
     void test();
 
 private:

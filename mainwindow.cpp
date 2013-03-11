@@ -4,6 +4,7 @@
 #include <math.h>
 #include <iostream>
 #include "itemgenerator.h"
+#include "item.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -81,6 +82,8 @@ void MainWindow::nextQuest() {
     questTime = 0;
     questLength = ceil(questLength * QUEST_LEVEL_UP_FACTOR);
 
-    ui->questList->insertItem(0, QString::fromStdString(questGenerator->getItem()));
+    Item item = questGenerator->getItem();
+
+    ui->questList->insertItem(0, QString::fromStdString(item.toString()));
     ui->questProgress->setMaximum(questLength);
 }

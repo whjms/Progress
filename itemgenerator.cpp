@@ -2,6 +2,7 @@
  * origins, and types.
  */
 #include "itemgenerator.h"
+#include "item.h"
 #include <stdlib.h>
 #include <iostream>
 
@@ -95,10 +96,11 @@ void ItemGenerator::initEffectVector() {
     effects.push_back("luck");
 }
 
-std::string ItemGenerator::getItem() {
+Item ItemGenerator::getItem() {
     std::string type = itemTypes[rand() % itemTypes.size()];
     std::string material = materials[rand() % materials.size()];
     std::string quality = qualities[rand() % qualities.size()];
     std::string effect = effects[rand() % effects.size()];
-    return quality + " " + material + " " + type + " of " + effect;
+    Item item(type, quality, material, effect);
+    return item;
 }

@@ -6,18 +6,17 @@
 /* Sets this Item's properties via constructor
  */
 Item::Item(std::string _type, std::string _quality, std::string _material,
-     std::string _effect)
-    :
+     std::string _effect):
+    effect(_effect),
     type(_type),
     quality(_quality),
-    material(_material),
-    effect(_effect)
+    material(_material)
 {
 }
 
 /* Outputs a string representation of this Item
  * (e.g. 'Poor steel boots of speed')
  */
-std::string toString() {
+std::string Item::toString() {
     return quality + " " + material + " " + type + " of " + effect;
 }
