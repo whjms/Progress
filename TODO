@@ -1,4 +1,8 @@
-2 options:
+There needs to be some way of simplifying the interaction classes. Ideally, 
+this would also involve the creation of a 'business logic' class, thus making
+MainWindow much simpler and easier to modify.
+
+There are 2 (visible) options:
 
 1:
   * Setup the KillQuest, ItemQuest, LootItem, EquipmentItem classes
