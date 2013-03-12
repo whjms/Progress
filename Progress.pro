@@ -22,7 +22,8 @@ SOURCES += main.cpp\
     locationgenerator.cpp \
     itemquest.cpp \
     killquest.cpp \
-    lootitem.cpp
+    lootitem.cpp \
+    equipmentitem.cpp
 
 HEADERS  += mainwindow.h \
     itemgenerator.h \
@@ -33,6 +34,7 @@ HEADERS  += mainwindow.h \
     locationgenerator.h \
     itemquest.h \
     killquest.h \
-    lootitem.h
+    lootitem.h \
+    equipmentitem.h
 
 FORMS    += mainwindow.ui

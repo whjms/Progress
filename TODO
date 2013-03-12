@@ -1,0 +1,12 @@
+2 options:
+
+1:
+  * Setup the KillQuest, ItemQuest, LootItem, EquipmentItem classes
+  * Create some sort of class that would manage the generation and creation of
+    either type of Quest. The type of class would be randomly selected, and the
+    methods for accessing quest data (length, reward, item reward) would be
+    abstracted from MainWindow by this class.
+
+2:
+  * Look into some way of refactoring the Items and Quests (templates or
+    inheritance) to make them accessible using common methods
