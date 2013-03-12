@@ -19,7 +19,10 @@ SOURCES += main.cpp\
     questgenerator.cpp \
     quest.cpp \
     location.cpp \
-    locationgenerator.cpp
+    locationgenerator.cpp \
+    itemquest.cpp \
+    killquest.cpp \
+    lootitem.cpp
 
 HEADERS  += mainwindow.h \
     itemgenerator.h \
@@ -27,6 +30,9 @@ HEADERS  += mainwindow.h \
     questgenerator.h \
     quest.h \
     location.h \
-    locationgenerator.h
+    locationgenerator.h \
+    itemquest.h \
+    killquest.h \
+    lootitem.h
 
 FORMS    += mainwindow.ui

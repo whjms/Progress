@@ -28,12 +28,15 @@ public:
     int getLength();
     Item getItem();
     Location *getLocation();
+
 private:
     Item questItem;
+    std::string action;
+
+protected:
+    Location* location;
     int reward;
     int length;
-    std::string action;
-    Location* location;
 };
 
 #endif // QUEST_H
